@@ -1,0 +1,19 @@
+# Figure
+figure.dpi: 300
+figure.facecolor: none
+
+# Latex
+mathtext.fontset: cm
+
+# Font
+font.size: 16
+
+# Axes
+axes.prop_cycle: cycler("color", ("#7aa585", "#dca67a", "#ef3b37"))
+axes.facecolor: none
+
+# Save
+savefig.dpi: 300
+savefig.bbox: tight
+savefig.pad_inches: 0.1
+savefig.format: svg

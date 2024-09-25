@@ -1,0 +1,222 @@
+/* @theme presentation */
+
+@import 'default';
+@import url('css/colors.css');
+@import url('css/fonts.css');
+
+* {
+    font-family: var(--font-primary);
+}
+
+iframe {
+    border: none;
+}
+
+
+
+h1 {
+    color: var(--color-primary);
+    font-weight: normal;
+
+}
+
+h2 {
+    color: var(--color-primary);
+    position: fixed;
+    text-align: center;
+    top: 0px;
+    left: 40px;
+    width: 1200px;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    font-weight: normal;
+}
+
+h2 strong {
+    color: var(--color-body);
+}
+
+h2+h3 {
+    color: black;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: inline;
+    width: 100%;
+}
+
+h4 {
+    font-size: 20pt;
+    background-color: var(--color-light);
+    margin: 10px;
+    padding: 10px;
+    font-weight: normal;
+    border-radius: 10px;
+}
+
+h4 strong {
+    color: var(--color-body);
+    font-weight: bold;
+}
+
+a {
+    color: var(--color-secondary);
+    text-decoration: underline;
+    text-decoration-thickness: 2.7px;
+    text-underline-offset: 4px;
+}
+
+a:has(code) {
+    vertical-align: top;
+    color: var(--color-blueschist);
+    text-decoration: none;
+}
+
+a:has(code)>code {
+    background: none;
+}
+
+a:has(code)>img {
+    background: none;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+    background-color: #ffffff;
+}
+
+audio {
+    min-width: 80%;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    color: var(--color-body);
+    padding-top: 130px;
+    gap: 10px;
+    background-color: var(--color-light);
+}
+
+
+p,
+div {
+    text-align: center;
+    margin: auto;
+    flex-basis: 40%;
+    flex-shrink: 3;
+    flex-grow: 1;
+
+}
+
+code {
+    font-family: var(--font-mono);
+}
+
+pre {
+    font-family: var(--font-mono);
+    flex-basis: 45%;
+    margin: auto;
+    background-color: var(--color-light);
+    border: none;
+    padding: 30px;
+}
+
+p:has(img) {
+    flex-grow: 3;
+    flex-basis: 45%;
+}
+
+img {
+    background-color: transparent;
+}
+
+li {
+    text-align: left;
+    padding: 0;
+}
+
+blockquote {
+    color: var(--color-secondary);
+    border-left: none;
+}
+
+section::after,
+footer,
+footer a {
+    font-size: 17pt;
+    color: var(--color-footer);
+    text-decoration: none;
+}
+
+
+
+section.titlepage {
+    background-color: var(--color-sable);
+    background-image: url("images/background/logo-ipgp.png");
+    background-size: 1800px;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    display: flex;
+    align-items: flex-start;
+    padding: 120px;
+}
+
+section.titlepage>* {
+    margin: 10px;
+    min-width: 100%;
+}
+
+section.titlepage p {
+    text-align: left;
+}
+
+section.titlepage::after {
+    color: transparent;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo p {
+    display: inline-flex;
+    gap: 30px;
+}
+
+.logo img {
+    background-color: transparent;
+}
+
+.frames {
+    min-width: 100%;
+}
+
+.frames ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 0px;
+    align-items: stretch;
+    align-content: space-between;
+    justify-content: center;
+    gap: 20px;
+}
+
+.frames ul li {
+    padding: 20px;
+    background-color: var(--color-light);
+    border-radius: 20px;
+    text-align: center;
+    flex-grow: 2;
+
+}
+
+.frames ul li:first-child {
+    margin-top: 7px;
+}
