@@ -12,15 +12,12 @@ The lecture slides are available in the [lectures](lectures/) folder. The corres
 
 ### Lectures
 
-1. [Introduction to observational seismology](lectures/lecture_1.pdf)
-2. [Earthquake location and monitoring](lectures/lecture_2.pdf)
-3. [Noise-based seismology](lectures/lecture_3.pdf)
+1. [Planetary magnetic fields](lectures/lecture-1-planetary-magnetic-fields/plan_mag_fields.pdf)
+1. [Digital signal processing](lectures/lecture-2-digital-signal-processing/slides.pdf)
+1. [Observational seismology](lectures/lecture-3-observational-seismology/lecture-3-observational-seismology.pdf)
 
 ### Notebooks
 
-1. [Basic signal processing with Python](notebooks/1_signal_processing)
-2. [Secular variation of the geomagnetic field](notebooks/2_secular_variation)
-3. [Spectral analysis of seismic data](notebooks/3_spectral_analysis)
-4. [Earthquake location](notebooks/4_earthquake_location)
-5. [Passive seismic interferometry](notebooks/5_passive_seismic_interferometry)
+1. [Signal processing with Python](notebooks/1_signal_processing)
+1. [Spectral analysis](notebooks/3_spectral_analysis)
 
