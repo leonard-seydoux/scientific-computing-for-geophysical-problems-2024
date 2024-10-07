@@ -80,12 +80,16 @@ def hammer_plot_3(SVX, SVY, SVZ, nlat, nlon, colat, longi, central_long=None, ou
         clevs = np.linspace(-maxsv, maxsv, 11, endpoint=True)
         ax.set_global()
         ax.coastlines()
-        m = ax.contourf(lons, lats, sv2d, levels=clevs, transform = ccrs.PlateCarree(), cmap="RdBu_r", extend='both')
-        c = ax.contour(lons, lats,  sv2d, clevs, colors='k', transform = ccrs.PlateCarree())
-        cm = fig.colorbar(m, ax=ax)
-        cm.set_label("nT/yr")
-        font_size = 10 # Adjust as appropriate.
-        cm.ax.tick_params(labelsize=font_size)
+        try: 
+            m = ax.contourf(lons, lats, sv2d, levels=clevs, transform = ccrs.PlateCarree(), cmap="RdBu_r", extend='both')
+            c = ax.contour(lons, lats,  sv2d, clevs, colors='k', transform = ccrs.PlateCarree())
+            cm = fig.colorbar(m, ax=ax)
+            cm.set_label("nT/yr")
+            font_size = 10 # Adjust as appropriate.
+            cm.ax.tick_params(labelsize=font_size)
+        except:
+            #add a piece of text to indicate that the plot is empty
+            ax.text(0.5, 0.5, 'No contour', horizontalalignment='center', verticalalignment='center', transform=ax.transAxes)
         ax.set_title(title[iplot], fontsize=font_size)
 #
     plt.tight_layout()
